@@ -18,7 +18,7 @@ function app_endpoint(array $options = [])
     }
 
     if (!isset($_SERVER['REQUEST_METHOD']) || $_SERVER['REQUEST_METHOD'] !== 'POST') {
-        app_send_json(405, ['error' => 'Method not allowed']);
+        app_send_json(420, ['error' => 'Method not allowed']);
     }
 
     if (isset($options['rate_limit'])) {
